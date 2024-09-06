@@ -1,0 +1,495 @@
+# vsim -voptargs="+acc" tb_top -c -do "run -all; exit" 
+# Start time: 10:42:15 on Sep 06,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.sfr_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.tb_top(fast)
+# Loading work.sfr_if(fast__2)
+# Loading work.design_sfr(fast)
+# Loading C:/questasim64_2024.1/uvm-1.1d\win64\uvm_dpi.dll
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# tb_top  is my display
+# 
+# 65811
+# UVM_INFO @ 0: reporter [RNTST] Running test reg_test...
+# include_coverage not located
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean recording_detail?
+# --------------------------------------------------------------------------------
+# Name                 Type              Size  Value                              
+# --------------------------------------------------------------------------------
+# reg_model            RegModel_SFR      -     @511                               
+#   mod_reg            module_reg        -     @514                               
+#     debug_reg        ral_debug_reg     -     @540                               
+#       w_axi_resp     uvm_reg_field     ...    RO debug_reg[0:0]=1'h0            
+#       r_axi_resp     uvm_reg_field     ...    RO debug_reg[1:1]=1'h0            
+#       rsvd           uvm_reg_field     ...    RO debug_reg[31:2]=30'h00000000   
+#     intr_msk_reg     ral_intr_msk_reg  -     @534                               
+#       w_axi_err_msk  uvm_reg_field     ...    RW intr_msk_reg[0:0]=1'h1         
+#       r_axi_err_msk  uvm_reg_field     ...    RW intr_msk_reg[1:1]=1'h0         
+#       rsvd           uvm_reg_field     ...    RO intr_msk_reg[31:2]=30'h00000000
+#     intr_sts_reg     ral_intr_sts_reg  -     @528                               
+#       w_axi_err      uvm_reg_field     ...    W1C intr_sts_reg[0:0]=1'h0        
+#       r_axi_err      uvm_reg_field     ...    W1C intr_sts_reg[1:1]=1'h0        
+#       rsvd           uvm_reg_field     ...    RO intr_sts_reg[31:2]=30'h00000000
+#     control_reg      ral_control_reg   -     @521                               
+#       mod_en         uvm_reg_field     ...    RW control_reg[0:0]=1'h1          
+#       dbg_en         uvm_reg_field     ...    RW control_reg[1:1]=1'h0          
+#       parity_en      uvm_reg_field     ...    RW control_reg[2:2]=1'h1          
+#       rsvd           uvm_reg_field     ...    RO control_reg[31:3]=29'h00000000 
+#     uvm_reg_map      uvm_reg_map       -     @545                               
+#       endian                           ...   UVM_LITTLE_ENDIAN                  
+#       debug_reg      ral_debug_reg     ...   @540 +'hc                          
+#       intr_msk_reg   ral_intr_msk_reg  ...   @534 +'h8                          
+#       intr_sts_reg   ral_intr_sts_reg  ...   @528 +'h4                          
+#       control_reg    ral_control_reg   ...   @521 +'h0                          
+#   axi_map            uvm_reg_map       -     @513                               
+#     endian                             ...   UVM_LITTLE_ENDIAN                  
+#     uvm_reg_map      uvm_reg_map       -     @545                               
+#       endian                           ...   UVM_LITTLE_ENDIAN                  
+#       debug_reg      ral_debug_reg     ...   @540 +'hc                          
+#       intr_msk_reg   ral_intr_msk_reg  ...   @534 +'h8                          
+#       intr_sts_reg   ral_intr_sts_reg  ...   @528 +'h4                          
+#       control_reg    ral_control_reg   ...   @521 +'h0                          
+# --------------------------------------------------------------------------------
+# pkg.env.build_phase is my  uvm root result65811
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               reg_test                -     @473 
+#   env_o                    env                     -     @480 
+#     agt                    agent                   -     @487 
+#       drv                  driver                  -     @552 
+#         rsp_port           uvm_analysis_port       -     @567 
+#         seq_item_port      uvm_seq_item_pull_port  -     @559 
+#       mon                  monitor                 -     @684 
+#         item_collect_port  uvm_analysis_port       -     @691 
+#       seqr                 seqcr                   -     @575 
+#         rsp_export         uvm_analysis_export     -     @582 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @676 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     agt1                   agent                   -     @494 
+#       drv                  driver                  -     @711 
+#         rsp_port           uvm_analysis_port       -     @726 
+#         seq_item_port      uvm_seq_item_pull_port  -     @718 
+#       mon                  monitor                 -     @843 
+#         item_collect_port  uvm_analysis_port       -     @850 
+#       seqr                 seqcr                   -     @734 
+#         rsp_export         uvm_analysis_export     -     @741 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @835 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO ..\env/base_seq.sv(31) @ 0: uvm_test_top.env_o.agt.seqr@@rseq [reg_seq] Reg seq: Inside Body
+# UVM_INFO @ 0: reporter [TEST] 
+# 
+#  --------------------------FROM_ADEPTER---------------------------
+#  |                                                                     |
+#  |    DATA    |    ADDR   |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  | cccccccc      |  0       |  0         |
+#  -----------------------------------------------------------------------
+# UVM_INFO ..\env/driver.sv(42) @ 6: uvm_test_top.env_o.agt.drv [driver] waddr = 0, wdata = cccccccc
+# UVM_INFO @ 6: uvm_test_top.env_o.agt.drv [TEST] 
+# 
+#  --------------------------FROM_DRIVER(1)---------------------------
+#  |                                                                     |
+#  |    DATA     |     ADDR    |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  |  cccccccc    |  0       |  0         |
+#  -----------------------------------------------------------------------
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# UVM_INFO @ 6: reporter [TEST] 
+# 
+#  --------------------------FROM_ADEPTER---------------------------
+#  |                                                                     |
+#  |    DATA    |    ADDR   |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  | 0             |  0       |  1         |
+#  -----------------------------------------------------------------------
+# UVM_INFO ..\env/driver.sv(34) @ 14: uvm_test_top.env_o.agt.drv [driver] raddr = 0, rdata = cccccccc
+# UVM_INFO @ 14: uvm_test_top.env_o.agt.drv [TEST] 
+# 
+#  --------------------------FROM_DRIVER(1)---------------------------
+#  |                                                                     |
+#  |    DATA     |     ADDR    |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  |  cccccccc    |  0       |  1         |
+#  -----------------------------------------------------------------------
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# UVM_INFO @ 14: reporter [TEST] 
+# 
+#  --------------------------FROM_ADEPTER---------------------------
+#  |                                                                     |
+#  |    DATA    |    ADDR   |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  | bbbbbbbb      |  8       |  0         |
+#  -----------------------------------------------------------------------
+# UVM_INFO ..\env/driver.sv(42) @ 22: uvm_test_top.env_o.agt.drv [driver] waddr = 8, wdata = bbbbbbbb
+# UVM_INFO @ 22: uvm_test_top.env_o.agt.drv [TEST] 
+# 
+#  --------------------------FROM_DRIVER(1)---------------------------
+#  |                                                                     |
+#  |    DATA     |     ADDR    |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  |  bbbbbbbb    |  8       |  0         |
+#  -----------------------------------------------------------------------
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# UVM_INFO @ 22: reporter [TEST] 
+# 
+#  --------------------------FROM_ADEPTER---------------------------
+#  |                                                                     |
+#  |    DATA    |    ADDR   |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  | 0             |  8       |  1         |
+#  -----------------------------------------------------------------------
+# UVM_INFO ..\env/driver.sv(34) @ 30: uvm_test_top.env_o.agt.drv [driver] raddr = 8, rdata = bbbbbbbb
+# UVM_INFO @ 30: uvm_test_top.env_o.agt.drv [TEST] 
+# 
+#  --------------------------FROM_DRIVER(1)---------------------------
+#  |                                                                     |
+#  |    DATA     |     ADDR    |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  |  bbbbbbbb    |  8       |  1         |
+#  -----------------------------------------------------------------------
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# UVM_INFO @ 30: reporter [TEST] 
+# 
+#  --------------------------FROM_ADEPTER---------------------------
+#  |                                                                     |
+#  |    DATA    |    ADDR   |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  | aaaaaaaa      |  c       |  0         |
+#  -----------------------------------------------------------------------
+# UVM_INFO ..\env/driver.sv(42) @ 38: uvm_test_top.env_o.agt.drv [driver] waddr = c, wdata = aaaaaaaa
+# UVM_INFO @ 38: uvm_test_top.env_o.agt.drv [TEST] 
+# 
+#  --------------------------FROM_DRIVER(1)---------------------------
+#  |                                                                     |
+#  |    DATA     |     ADDR    |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  |  aaaaaaaa    |  c       |  0         |
+#  -----------------------------------------------------------------------
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# UVM_INFO @ 38: reporter [TEST] 
+# 
+#  --------------------------FROM_ADEPTER---------------------------
+#  |                                                                     |
+#  |    DATA    |    ADDR   |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  | 0             |  c       |  1         |
+#  -----------------------------------------------------------------------
+# UVM_INFO ..\env/driver.sv(34) @ 46: uvm_test_top.env_o.agt.drv [driver] raddr = c, rdata = aaaaaaaa
+# UVM_INFO @ 46: uvm_test_top.env_o.agt.drv [TEST] 
+# 
+#  --------------------------FROM_DRIVER(1)---------------------------
+#  |                                                                     |
+#  |    DATA     |     ADDR    |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  |  aaaaaaaa    |  c       |  1         |
+#  -----------------------------------------------------------------------
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# UVM_INFO ..\env/base_seq.sv(31) @ 46: uvm_test_top.env_o.agt.seqr@@rseq [reg_seq] Reg seq: Inside Body
+# UVM_INFO @ 46: reporter [TEST] 
+# 
+#  --------------------------FROM_ADEPTER---------------------------
+#  |                                                                     |
+#  |    DATA    |    ADDR   |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  | cccccccc      |  0       |  0         |
+#  -----------------------------------------------------------------------
+# UVM_INFO ..\env/driver.sv(42) @ 54: uvm_test_top.env_o.agt1.drv [driver] waddr = 0, wdata = cccccccc
+# UVM_INFO @ 54: uvm_test_top.env_o.agt1.drv [TEST] 
+# 
+#  --------------------------FROM_DRIVER(2)---------------------------
+#  |                                                                     |
+#  |    DATA     |     ADDR    |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  |  cccccccc    |  0       |  0         |
+#  -----------------------------------------------------------------------
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# UVM_INFO @ 54: reporter [TEST] 
+# 
+#  --------------------------FROM_ADEPTER---------------------------
+#  |                                                                     |
+#  |    DATA    |    ADDR   |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  | 0             |  0       |  1         |
+#  -----------------------------------------------------------------------
+# UVM_INFO ..\env/driver.sv(34) @ 62: uvm_test_top.env_o.agt1.drv [driver] raddr = 0, rdata = cccccccc
+# UVM_INFO @ 62: uvm_test_top.env_o.agt1.drv [TEST] 
+# 
+#  --------------------------FROM_DRIVER(2)---------------------------
+#  |                                                                     |
+#  |    DATA     |     ADDR    |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  |  cccccccc    |  0       |  1         |
+#  -----------------------------------------------------------------------
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# UVM_INFO @ 62: reporter [TEST] 
+# 
+#  --------------------------FROM_ADEPTER---------------------------
+#  |                                                                     |
+#  |    DATA    |    ADDR   |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  | bbbbbbbb      |  8       |  0         |
+#  -----------------------------------------------------------------------
+# UVM_INFO ..\env/driver.sv(42) @ 70: uvm_test_top.env_o.agt1.drv [driver] waddr = 8, wdata = bbbbbbbb
+# UVM_INFO @ 70: uvm_test_top.env_o.agt1.drv [TEST] 
+# 
+#  --------------------------FROM_DRIVER(2)---------------------------
+#  |                                                                     |
+#  |    DATA     |     ADDR    |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  |  bbbbbbbb    |  8       |  0         |
+#  -----------------------------------------------------------------------
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# UVM_INFO @ 70: reporter [TEST] 
+# 
+#  --------------------------FROM_ADEPTER---------------------------
+#  |                                                                     |
+#  |    DATA    |    ADDR   |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  | 0             |  8       |  1         |
+#  -----------------------------------------------------------------------
+# UVM_INFO ..\env/driver.sv(34) @ 78: uvm_test_top.env_o.agt1.drv [driver] raddr = 8, rdata = bbbbbbbb
+# UVM_INFO @ 78: uvm_test_top.env_o.agt1.drv [TEST] 
+# 
+#  --------------------------FROM_DRIVER(2)---------------------------
+#  |                                                                     |
+#  |    DATA     |     ADDR    |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  |  bbbbbbbb    |  8       |  1         |
+#  -----------------------------------------------------------------------
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# UVM_INFO @ 78: reporter [TEST] 
+# 
+#  --------------------------FROM_ADEPTER---------------------------
+#  |                                                                     |
+#  |    DATA    |    ADDR   |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  | aaaaaaaa      |  c       |  0         |
+#  -----------------------------------------------------------------------
+# UVM_INFO ..\env/driver.sv(42) @ 86: uvm_test_top.env_o.agt1.drv [driver] waddr = c, wdata = aaaaaaaa
+# UVM_INFO @ 86: uvm_test_top.env_o.agt1.drv [TEST] 
+# 
+#  --------------------------FROM_DRIVER(2)---------------------------
+#  |                                                                     |
+#  |    DATA     |     ADDR    |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  |  aaaaaaaa    |  c       |  0         |
+#  -----------------------------------------------------------------------
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# UVM_INFO @ 86: reporter [TEST] 
+# 
+#  --------------------------FROM_ADEPTER---------------------------
+#  |                                                                     |
+#  |    DATA    |    ADDR   |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  | 0             |  c       |  1         |
+#  -----------------------------------------------------------------------
+# UVM_INFO ..\env/driver.sv(34) @ 94: uvm_test_top.env_o.agt1.drv [driver] raddr = c, rdata = aaaaaaaa
+# UVM_INFO @ 94: uvm_test_top.env_o.agt1.drv [TEST] 
+# 
+#  --------------------------FROM_DRIVER(2)---------------------------
+#  |                                                                     |
+#  |    DATA     |     ADDR    |   RD or WR  |
+#  -----------------------------------------------------------------------
+#  |  aaaaaaaa    |  c       |  1         |
+#  -----------------------------------------------------------------------
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# UVM_INFO ..\test/base_test.sv(28) @ 94: uvm_test_top [reg_test] End of testcase
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 94: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   44
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST]    24
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [driver]    12
+# [reg_seq]     2
+# [reg_test]     1
+# ** Note: $finish    : C:/questasim64_2024.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 94 ns  Iteration: 62  Instance: /tb_top
+# End time: 10:42:16 on Sep 06,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

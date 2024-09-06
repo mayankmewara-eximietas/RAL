@@ -1,0 +1,13 @@
+BEGIN 3:sfr_if:fast__2:work
+    i_rd_en :  1:tb_top:fast:work
+    i_waddr :  1:tb_top:fast:work
+    i_raddr :  1:tb_top:fast:work
+    i_wdata :  1:tb_top:fast:work
+    i_wstrobe :  1:tb_top:fast:work
+    clk :  1:tb_top:fast:work
+    o_rdata :  1:tb_top:fast:work
+    reset_n :  1:tb_top:fast:work
+    o_wready :  1:tb_top:fast:work
+    i_wr_en :  1:tb_top:fast:work
+    o_rvalid :  1:tb_top:fast:work
+END 
